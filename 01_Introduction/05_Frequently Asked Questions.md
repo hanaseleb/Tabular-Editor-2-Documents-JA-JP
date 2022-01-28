@@ -1,0 +1,16 @@
+よくある質問
+タブラエディタとは何ですか？
+基本的に、Tabular EditorはAnalysis Services Tabularモデルを構成するメタデータを編集するためのUIを提供します。モデルの編集にTabular Editorを使用する場合とVisual Studioを使用する場合の主な違いは、Tabular Editorがデータをロードせず、メタデータのみをロードすることです。つまり、メジャーや表示フォルダなどを作成・変更しても、検証や計算は実行されません。検証や計算は、ユーザーが変更をデータベースに永続化することを選択したときにのみ実行されます。これにより、Visual Studioでの作業が遅くなりがちな中規模から大規模のモデルの開発者に、より良い体験を提供します。
+
+さらに、Tabular Editorには、一般的に生産性を向上させ、特定のタスクを容易にする機能がたくさんあります。
+
+なぜSSAS Tabular用の別のツールが必要なのでしょうか？
+Analysis Services Tabularを使っている方は、SQL Server Data Tools（Visual Studio）、DAX Editor、DAX Studio、BISM Normalizer、BIDSHelperなどをすでにご存知かもしれません。これらはすべて優れたツールで、それぞれに目的があります。Tabular Editorは、これらのツールに取って代わるものではなく、むしろそれらを補完するものと考えてください。なぜTabular Editorが正当化されるのかについては、「機能の概要」の記事をご覧ください。
+
+なぜTabular EditorはVisual Studioのプラグインとして利用できないのですか？
+Visual Studio内でTabular Modelを扱う際のユーザーエクスペリエンスが向上することは間違いなく喜ばしいことですが、スタンドアロンのツールにはプラグインよりも優れた点がいくつかあります。まず、Tabular Editorを使うのにVisual Studio/SSDTのインストールは必要ありません。まず、Tabular Editorを使うのにVisual Studio/SSDTのインストールは必要ありません。次に、TabularEditor.exeは、デプロイメントやスクリプトなどのコマンドラインオプションで実行することができますが、これは.vsix（プラグイン）プロジェクトではできません。
+
+また、特筆すべきことがあります。Tabular Editorは、スタンドアロンの.zipファイルとしてダウンロードできます。つまり、何もインストールする必要がありません。言い換えれば、Windowsマシンの管理者権限がなくても、Tabular Editorを実行することができます。zipファイルをダウンロードして解凍し、TabularEditor.exeを実行するだけです。
+
+今後のリリースではどのような機能が予定されていますか？
+現在のロードマップはこちらでご覧いただけます。
